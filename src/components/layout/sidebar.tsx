@@ -55,7 +55,7 @@ export function Sidebar() {
                 <span className="flex-1 whitespace-nowrap">{item.label}</span>
               )}
 
-              {!collapsed && item.badge && (
+              {!collapsed && (item as any).badge && (
                 <span className="px-2 py-0.5 rounded-full bg-primary text-white text-xs font-semibold">
                   3
                 </span>
